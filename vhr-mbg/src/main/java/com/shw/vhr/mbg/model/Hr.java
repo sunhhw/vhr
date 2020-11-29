@@ -4,17 +4,33 @@ import io.swagger.annotations.ApiModelProperty;
 import java.io.Serializable;
 
 public class Hr implements Serializable {
-    @ApiModelProperty(value = "主键")
+
+    @ApiModelProperty(value = "hrID")
     private Integer id;
 
-    @ApiModelProperty(value = "名字")
+    @ApiModelProperty(value = "姓名")
     private String name;
 
-    @ApiModelProperty(value = "年龄")
-    private Integer age;
+    @ApiModelProperty(value = "手机号码")
+    private String phone;
 
-    @ApiModelProperty(value = "性别 1为男 2为女")
-    private Integer gender;
+    @ApiModelProperty(value = "住宅电话")
+    private String telephone;
+
+    @ApiModelProperty(value = "联系地址")
+    private String address;
+
+    private Boolean enabled;
+
+    @ApiModelProperty(value = "用户名")
+    private String username;
+
+    @ApiModelProperty(value = "密码")
+    private String password;
+
+    private String userface;
+
+    private String remark;
 
     private static final long serialVersionUID = 1L;
 
@@ -34,20 +50,68 @@ public class Hr implements Serializable {
         this.name = name;
     }
 
-    public Integer getAge() {
-        return age;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setAge(Integer age) {
-        this.age = age;
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
-    public Integer getGender() {
-        return gender;
+    public String getTelephone() {
+        return telephone;
     }
 
-    public void setGender(Integer gender) {
-        this.gender = gender;
+    public void setTelephone(String telephone) {
+        this.telephone = telephone;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public Boolean getEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(Boolean enabled) {
+        this.enabled = enabled;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getUserface() {
+        return userface;
+    }
+
+    public void setUserface(String userface) {
+        this.userface = userface;
+    }
+
+    public String getRemark() {
+        return remark;
+    }
+
+    public void setRemark(String remark) {
+        this.remark = remark;
     }
 
     @Override
@@ -58,8 +122,14 @@ public class Hr implements Serializable {
         sb.append("Hash = ").append(hashCode());
         sb.append(", id=").append(id);
         sb.append(", name=").append(name);
-        sb.append(", age=").append(age);
-        sb.append(", gender=").append(gender);
+        sb.append(", phone=").append(phone);
+        sb.append(", telephone=").append(telephone);
+        sb.append(", address=").append(address);
+        sb.append(", enabled=").append(enabled);
+        sb.append(", username=").append(username);
+        sb.append(", password=").append(password);
+        sb.append(", userface=").append(userface);
+        sb.append(", remark=").append(remark);
         sb.append(", serialVersionUID=").append(serialVersionUID);
         sb.append("]");
         return sb.toString();

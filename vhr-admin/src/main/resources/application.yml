@@ -9,4 +9,8 @@ knife4j:
   setting:
     enableRequestCache: false
 
-
+# 指定数据库语句编写的xml文件位置
+mybatis:
+  mapper-locations:
+    - classpath:dao/*.xml
+    - classpath*:com/**/mapper/*.xml
