@@ -1,0 +1,12 @@
+server:
+  port: 81
+spring:
+  profiles:
+    active: druid
+
+knife4j:
+  enable: true
+  setting:
+    enableRequestCache: false
+
+
