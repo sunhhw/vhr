@@ -15,14 +15,10 @@ public enum ResultCode {
      */
     FAILED(500,"操作失败"),
 
-    UN(401,"没有权限");
-
-
-
-
-
-
-
+    /**
+     * 没有认证
+     */
+    UNAUTHENTICATION(401,"未登录或登陆过期");
 
 
     ResultCode(Integer code, String message) {

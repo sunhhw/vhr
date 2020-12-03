@@ -11,5 +11,14 @@
 
     <artifactId>vhr-security</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.shw</groupId>
+            <artifactId>vhr-mbg</artifactId>
+        </dependency>
+
+
+
+    </dependencies>
 
 </project>

@@ -25,7 +25,6 @@ public class HrController {
 
     @RequestMapping(value = "/hello",method = RequestMethod.GET)
     public AjaxResult<List<Hr>> hello() {
-
         HrExample example = new HrExample();
         HrExample.Criteria criteria = example.createCriteria();
         criteria.andAddressEqualTo("深圳南山");

@@ -8,10 +8,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @date 2020/11/28 2:44
  */
 @SpringBootApplication
-public class AdminApplication {
+public class VhrApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(AdminApplication.class, args);
+        SpringApplication.run(VhrApplication.class, args);
     }
 
 }
